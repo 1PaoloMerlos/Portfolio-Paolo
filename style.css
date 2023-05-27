@@ -1,0 +1,56 @@
+body {
+
+    background-color: #181A1B;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.buttonselect {
+    border: solid 1px white;
+}
+
+.Main {
+    border: solid 1px red;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+
+.LeftCol {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px green;
+}
+
+.RightCol {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    border: solid 1px rgb(20, 32, 191);
+}
+
+.buttonselect {
+height: 10%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttoncontent {
+    height: 90%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
