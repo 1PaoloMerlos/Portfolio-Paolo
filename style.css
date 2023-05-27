@@ -1,56 +1,51 @@
+
 body {
-
     background-color: #181A1B;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-.buttonselect {
-    border: solid 1px white;
 }
 
 .Main {
-    border: solid 1px red;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
+  height: 100vh;
 }
 
 .LeftCol {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    border: solid 1px green;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.SocialMedia {
+  padding: 10px;
 }
 
 .RightCol {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    border: solid 1px rgb(20, 32, 191);
+  background-color: #f1f1f1;
 }
 
-.buttonselect {
-height: 10%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+.NavBar {
+  background-color: #343a40;
+  padding: 10px;
 }
 
-.buttoncontent {
-    height: 90%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+.filter-button {
+  margin-right: 10px;
+}
+
+.Content-projects-about {
+  padding: 20px;
+}
+
+.sub-filters {
+  margin-bottom: 10px;
+}
+
+.projects {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
 }
