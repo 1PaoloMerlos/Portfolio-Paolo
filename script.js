@@ -91,3 +91,12 @@ $(document).ready(function() {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  var carouselExample = document.getElementById('carouselExample');
+  var carousel = new bootstrap.Carousel(carouselExample, {
+    interval: 2000, // Set the interval time in milliseconds (e.g., 2000 = 2 seconds)
+    pause: false, // Disable pausing on hover
+    ride: 'carousel' // Enable automatic cycling
+  });
+});

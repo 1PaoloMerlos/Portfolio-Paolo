@@ -128,8 +128,6 @@ body {
   /* Add any desired padding value */
 }
 
- 
-
 /* Custom scrollbar styles */
 #projects-container::-webkit-scrollbar {
   width: 10px; /* Width of the scrollbar */
@@ -151,4 +149,35 @@ body {
   background: #6c16cd; /* Color of the scrollbar thumb on hover */
 }
 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.sub-filters {
+  margin-top: 15px;
+}
+.project-thumbnail:hover .overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  color: #FFF;
+  font-size: 48px;
+}
+
+.projects h3 {
+  margin-top: 10px;
+}
 
