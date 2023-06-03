@@ -42,13 +42,13 @@ body {
   margin-top: 20px;
 }
 
-/* .projects {
+.projects {
   background-color: #2F3132;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
   margin-bottom: 20px;
-} */
+} 
 
 
 
@@ -101,11 +101,20 @@ body {
   border-radius: 5px;
 }
 
+.about-content 
+{
+
+  height: 80vh; /* Adjust the height as needed */
+  min-height: 80vh; /* Adjust the height as needed */
+  background-color: #323538;
+  margin-top: 15px;
+}
+
 
 
 .Content-projects-about {
   overflow-y: scroll;
-  height: 85vh; /* Adjust the height as needed */
+  height: 83vh; /* Adjust the height as needed */
   min-height: 80vh; /* Adjust the height as needed */
   background-color: #323538;
   margin-top: 15px;
@@ -181,5 +190,9 @@ body {
 
 .projects h3 {
   margin-top: 10px;
+}
+
+.aboutmetitle {
+  padding-top:15px ;
 }
 

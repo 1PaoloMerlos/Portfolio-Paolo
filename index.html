@@ -29,48 +29,54 @@
     <div class="col-lg-9 RightCol">
       <div class="row NavBarButtons">
         <div class="col-2 col-lg-1">
-          <button type="button" class="filter-button btn btn-dark" data-filter="projects">Projects</button>
+          <button type="button" class="filter-button btn btn-secondary" data-filter="projects">Projects</button>
         </div>
-        <div class="col-2 col-lg-1 ">
-          <button type="button" class="filter-button btn btn-dark" data-filter="about">About</button>
+        <div class="col-2 col-lg-1">
+          <button type="button" class="filter-button btn btn-secondary" data-filter="about">About</button>
         </div>
       </div>
 
-      <div class="sub-filters row">
-        <div class="subfilters-buttons"> 
-          <button type="button" class="btn btn-secondary sub-filter-button" data-filter="all">All</button>
-          <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Music">Music Composition</button>
-          <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Unity">Unity</button>
-        </div>
-      </div>
+     
 
       <div class="row Content-projects-about" id="projects-container">
-        <div class="col-12 col-md-4 col-lg-4">
+        <h3 class="aboutmetitle">Projects
+          <div class="sub-filters row">
+            <div class="subfilters-buttons"> 
+              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="all">All</button>
+              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Music">Music Composition</button>
+              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Unity">Unity</button>
+            </div>
+          </div>
+        </h3> 
+     
+
+
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="projects Unity">
             <div class="project-thumbnail">
-              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="/Portfolio-Paolo/Content/GT CARS.png" class="d-block w-100" alt="Project Image 1">
+                    <img src="/Portfolio-Paolo/Content/GT CARS.png" class="d-block w-100">
                   </div>
                   <div class="carousel-item">
-                    <img src="/Portfolio-Paolo/Content/GT CARS LEVEL 1.png" class="d-block w-100" alt="Project Image 2">
+                    <img src="/Portfolio-Paolo/Content/GT CARS LEVEL 1.png" class="d-block w-100" >
                   </div>
                   <div class="carousel-item">
-                    <img src="/Portfolio-Paolo/Content/GT CARS LEVEL 2.png" class="d-block w-100" alt="Project Image 3">
+                    <img src="/Portfolio-Paolo/Content/GT CARS LEVEL 2.png" class="d-block w-100">
                   </div>
                 </div>
               </div>
             </div>
             
             <h3>GT Cars</h3>
-            <div class="project-details ">
+            <div class="project-details">
               <p>Our objective is to create a fun game with innovative mechanics and a fresh user experience. We made the decision to develop a game exclusively for computer platforms in light of the present environment, in which more people stay at home and spend a lot of time on their computers.</p>
               <p>The players goal in this game is to cross the finish line while gathering coins and keys. However, they must travel over treacherous terrain that is dotted with several hazards designed to slow them down and keep them from finishing the race. Players can unlock different cars to outrun the chasing cops and increase their chances of success by collecting coins.</p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="project-container">
             <div class="projects Music">
               <div class="project-thumbnail">
@@ -79,21 +85,16 @@
               <h3>PATH (MUSIC)</h3>
               <div class="project-details">
 
-
                 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1632442849&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/pmerlos" title="Paolo Merlos" target="_blank" style="color: #cccccc; text-decoration: none;">Paolo Merlos</a> · <a href="https://soundcloud.com/pmerlos/sets/path-soundtrack" title="PATH Soundtrack" target="_blank" style="color: #cccccc; text-decoration: none;">PATH Soundtrack</a></div>
 
-                <p>Developed using different alternative applications (FL Studio and Audacity).</p>
+                <p>Developed using different applications (FL Studio and Audacity).</p>
                 <p>These musical compositions were developed for the MGA-498 course for the VR game development project. Used to develop the aesthetic of different worlds of the game PATH.</p>
-
-              
-                  
-                
               </div>
             </div>
           </div>
         </div>
       
-        <div class="col-12 col-md-4 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="project-container">
             <div class="projects Unity">
               <div class="project-thumbnail">
@@ -106,7 +107,37 @@
             </div>
           </div>
         </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="project-container">
+            <div class="projects Unity">
+              <div class="project-thumbnail">
+                <img src="/Portfolio-Paolo/Content/PATH.jpg">               
+              </div>
+              <h3>PATH (Unity)</h3>
+              <div class="project-details">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <div class="row about-content" style="display:none;" >
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="about-content-text about">
+            <h3 class="aboutmetitle">About Me</h3> 
+            <div class="project-details">
+              <p>Add your about me content here.</p>
+              <p>You can provide information about your background, skills, experience, and any other relevant details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+     
     </div>
   </div>
 </div>
