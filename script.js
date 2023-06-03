@@ -2,10 +2,10 @@ $(document).ready(function() {
   $('.filter-button').click(function() {
     var value = $(this).attr('data-filter');
     if (value === 'projects') {
-      $('.Content-projects-about').show('1000');
+      $('.projects-all').show('1000');
       $('.about-content').hide('3000');
     } else if (value === 'about') {
-      $('.Content-projects-about').hide('3000');
+      $('.projects-all').hide('3000');
       $('.about-content').show('1000');
     }
   });

@@ -1,7 +1,9 @@
 body {
   background-color: #181A1B;
   color: #FFF;
+
 }
+
 
 /* ================================== MAIN ============================*/
 
@@ -9,7 +11,7 @@ body {
 /* =============================== LEFT COLUMN =========================*/
 .LeftCol {
   background-color: #242628;
-  padding: 20px;
+height: 100vh;
 }
 
 .LeftCol img {
@@ -34,11 +36,24 @@ body {
   color: #6C16CD;
 }
 
+  
+.nametitle {
+margin-top:15px
+}
+
+
+@media screen and (max-width: 760px) {
+  .nametitle {
+    text-align: center;
+  }
+}
+
+
 /* =============================== RIGHT COLUMN =========================*/
 
 .RightCol {
   background-color: #1E2021;
-  padding: 20px;
+height: 100vh;
 }
 
 .filter-button {
@@ -114,19 +129,14 @@ body {
   border-radius: 5px;
 }
 
-.about-content {
-  height: 80vh;
-  min-height: 80vh;
-  background-color: #323538;
-  margin-top: 15px;
-}
 
-.Content-projects-about {
+
+
+.projects-all {
   overflow-y: scroll;
-  height: 83vh;
+  height: 87vh;
   min-height: 80vh;
   background-color: #323538;
-  margin-top: 15px;
 }
 
 .project-row {
@@ -143,6 +153,27 @@ body {
 .NavBarButtons button {
   padding: 5px;
 }
+
+.aboutmetitle {
+  padding-top: 10px;
+
+}
+
+.path-logo {
+  width: 15px;
+  height: 15px;
+}
+
+.abandonedbunker img{
+width: 100%;
+height: 100%;
+}
+
+.racingcars img{
+  width: 100%;
+  height: 100%;  
+}
+
 
 /* ======================= CUSTOM SCROLLBAR =======================*/
 #projects-container::-webkit-scrollbar {
@@ -162,37 +193,5 @@ body {
 
 #projects-container::-webkit-scrollbar-thumb:hover {
   background: #6C16CD;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-thumbnail:hover .overlay {
-  opacity: 1;
-}
-
-.play-btn {
-  color: #FFF;
-  font-size: 48px;
-}
-
-.aboutmetitle {
-  padding-top: 15px;
-}
-
-.path-logo {
-  width: 15px;
-  height: 15px;
 }
 
