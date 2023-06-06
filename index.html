@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
@@ -23,7 +24,7 @@
 
 
     <div class="col-lg-3 LeftCol">
-      <div class="text-center">
+      <div class="text-center col-12 col-md-12 col-lg-12">
         <img src="/Portfolio-Paolo/Content/emptyimage.png" class="img-fluid mt-5">
 
       </div>
@@ -51,16 +52,32 @@
           <i class="fas fa-envelope"></i>
         </a>
       </div>
+      <div class="container whitemdoedarkmode">
+        <div class="row">
+        
+          <div class="col-lg-12 d-flex justify-content-center align-items-center"> Toggle Theme:
+            <button class="toggle-button ToggleMode" id="toggle-mode" onclick="toggleMode()">
+              <span class="toggle-ball"></span>
+            </button>
+          </div>
+        </div>
+      </div>
 
+
+ 
+      
       </div>
     
     <div class="col-lg-9 RightCol">
   
-     
+   
 
-      <div class="Content-projects-about" >
-        <h3 class="aboutmetitle">Projects
-          <div class="sub-filters ">
+      <div class="Content-projects-about col-lg-12" >
+ 
+        <h3 class="aboutmetitle col-lg-2">Projects </h3> 
+ 
+          
+          <div class="sub-filters col-lg-12 ">
             <div class="subfilters-buttons"> 
               <button type="button" class="btn btn-secondary sub-filter-button active" data-filter="all">All</button>
               <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Music">Music Composition</button>
@@ -70,7 +87,7 @@
               <button type="button" class="btn btn-secondary sub-filter-button" data-filter="3D">3D Modelling</button>
             </div>
           </div>
-        </h3> 
+        
      
 <div class="row projects-all" id="projects-container"> 
 
@@ -100,6 +117,15 @@
               <p>The players goal in this game is to cross the finish line while gathering coins and keys. However, they must travel over treacherous terrain that is dotted with several hazards designed to slow them down and keep them from finishing the race. Players can unlock different cars to outrun the chasing cops and increase their chances of success by collecting coins.</p>
               
 <p> The project was collaboratively created in Unity using C#.</p>
+
+<div class="align-items-end text-center SocialMedia"> 
+  <a href="https://youtu.be/2VT4H-Hrcn8" target="_blank" class="me-2 ">
+    <i class="fab fa-youtube " >
+  
+    </i></a>
+  </div>
+
+
             </div>
           </div>
         </div>
@@ -374,7 +400,31 @@ In this collaborative project my part was the creation and improvement of the UI
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
+<script>
+  function toggleMode() {
+    var button = document.getElementById("toggle-mode");
+    var ball = button.querySelector(".toggle-ball");
+    var body = document.body;
+  
+    if (button.classList.contains("active")) {
+      button.classList.remove("active");
+      ball.style.transform = "translateX(0)";
+    } else {
+      button.classList.add("active");
+      ball.style.transform = "translateX(40px)";
+    }
+  
+    body.classList.toggle("white-mode");
+  }
+</script>
 
+<!-- <script>
+  const button = document.getElementById("toggle-mode");
+  const body = document.body;
 
+  button.addEventListener("click", function() {
+    body.classList.toggle("white-mode");
+  });
+</script> -->
 </body>
 </html>
