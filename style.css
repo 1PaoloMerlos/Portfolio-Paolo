@@ -72,12 +72,10 @@ height: 100vh;
   background-color: #181A1B;
 }
 
-.sub-filters {
-  margin-top: 15px;
-}
+
 
 .filter-content {
-  margin-top: 20px;
+display: inline-flex;
 }
 
 .projects {
@@ -115,6 +113,7 @@ height: 100vh;
 }
 
 
+
 .project-thumbnail img {
   width: 100%;
   height: 100%;
@@ -136,7 +135,7 @@ height: 100vh;
 
 .projects-all {
   overflow-y: scroll;
-  height: 87vh;
+  height: 89vh;
   min-height: 80vh;
   background-color: #323538;
 }
@@ -182,15 +181,15 @@ height: 100%;
 
 .filter-tag {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0;
+  right: 0;
   padding: 4px 8px;
   background-color: #f2f2f2;
   border-radius: 4px;
   font-size: 12px;
   font-weight: bold;
   color: #323538;
-  
+  margin: 0;
 
 }
 
@@ -213,5 +212,28 @@ height: 100%;
 
 #projects-container::-webkit-scrollbar-thumb:hover {
   background: #6C16CD;
+}
+
+
+/* show case */
+.showcase {
+  background-color: #1E2021;
+  color: #FFF;
+  padding: 50px 0;
+}
+
+.showcase-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.showcase-content h2 {
+  font-size: 24px;
+}
+
+#modelViewerContainer {
+  width: 100%;
+  height: 600px;
 }
 

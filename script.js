@@ -1,16 +1,50 @@
 $(document).ready(function() {
-  $('.filter-button').click(function() {
+
+    $('.filter-button').click(function() {
+    // Remove active class from all filter buttons
+    $('.filter-button').removeClass('active');
+    
+    // Add active class to the clicked filter button
+    $(this).addClass('active');
+    
     var value = $(this).attr('data-filter');
     if (value === 'projects') {
-      $('.projects-all').show('1000');
-      $('.about-content').hide('3000');
+      $('.projects-all').show('3000');
+      $('.about-content').hide('5000');
     } else if (value === 'about') {
       $('.projects-all').hide('3000');
       $('.about-content').show('1000');
     }
   });
 
+
+ 
+  $('.filter-button').click(function() {
+    // Remove active class from all sub-filter buttons
+    $('.filter-button').removeClass('active');
+    
+    // Add active class to the clicked sub-filter button
+    $(this).addClass('active');
+    
+    var value = $(this).attr('data-filter');
+    
+    if (value === 'AllProjects') {
+      $('.showcase-container').hide('1000');
+      $('.projects-container').show('1000');
+    } else if (value === 'Showcase') {
+      $('.projects-container').hide('1000');
+      $('.showcase-container').show('1000');
+    }
+  });
+
+  
   $('.sub-filter-button').click(function() {
+    // Remove active class from all sub-filter buttons
+    $('.sub-filter-button').removeClass('active');
+    
+    // Add active class to the clicked sub-filter button
+    $(this).addClass('active');
+    
     var value = $(this).attr('data-filter');
     if (value === 'all') {
       $('.projects').show('1000');
@@ -51,11 +85,4 @@ $(document).ready(function() {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  var carouselExample = document.getElementById('carouselExample');
-  var carousel = new bootstrap.Carousel(carouselExample, {
-    interval: 2000,
-    pause: false, // Disable pausing on hover
-    ride: 'carousel' // Enable automatic cycling
-  });
-});
+
