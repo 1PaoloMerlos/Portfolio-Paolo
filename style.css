@@ -231,8 +231,11 @@ height: 100%;
 
 
 /* white mode */
+
+
+
   .toggle-button {
-      background-color: #f0f0f0;
+      background-color: #ffffff;
       color: #333;
       border: none;
       padding: 0;
@@ -278,7 +281,7 @@ height: 100%;
 }
 
 .white-mode .LeftCol {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .white-mode .RightCol {
@@ -287,11 +290,11 @@ height: 100%;
 
 .white-mode .filter-button {
   color: #333;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .white-mode .sub-filter-button {
-  background-color: #ebebeb;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -302,7 +305,7 @@ height: 100%;
 }
 
 .white-mode .projects {
-  background-color: #ebebeb;
+  background-color: #ffffff;
 }
 
 .white-mode .SocialMedia .fa .fas {
