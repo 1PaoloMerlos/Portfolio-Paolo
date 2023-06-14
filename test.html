@@ -1,51 +1,9 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>GLTF 3D Model Loading</title>
-  <style>
-    body { margin: 0; }
-    #canvas-container { width: 100%; height: 100vh; }
-  </style>
+  <title>Babylon.js Viewer - Display a 3D model</title>
+  <script src="https://preview.babylonjs.com/viewer/babylon.viewer.js"></script> 
 </head>
 <body>
-  <div id="canvas-container"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-  <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
-  <script>
-    // Create a scene
-    const scene = new THREE.Scene();
-
-    // Create a camera
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-    // Create a renderer
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.getElementById('canvas-container').appendChild(renderer.domElement);
-
-    // Load the GLTF model
-    const loader = new THREE.GLTFLoader();
-    loader.load(
-      '/Portfolio-Paolo/R32.gltf',
-      function (gltf) {
-        scene.add(gltf.scene);
-      },
-      undefined,
-      function (error) {
-        console.error('Error loading GLTF model:', error);
-      }
-    );
-
-    // Set camera position
-    camera.position.z = 5;
-
-    // Render the scene
-    function animate() {
-      requestAnimationFrame(animate);
-      renderer.render(scene, camera);
-    }
-    animate();
-  </script>
+    <babylon model="/Portfolio-Paolo/SKYLINE.gltf" templates.main.params.fill-screen="true" templates.main.params.enable-touch="true"></babylon>
 </body>
 </html>
