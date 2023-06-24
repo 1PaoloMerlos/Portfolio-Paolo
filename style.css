@@ -61,7 +61,10 @@ height: 100vh;
   color: #FFF;
   background-color: #4B4D4E3F;
 }
-
+.sub-filters {
+  margin-top: 40px;
+ padding-bottom: 15px; 
+}
 .sub-filter-button {
   background-color: #2F3132;
   color: #FFF;
@@ -134,6 +137,8 @@ display: inline-flex;
   height: 88vh;
   min-height: 80vh;
   background-color: #323538;
+  border:5px solid rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
 }
 
 .project-row {
@@ -172,6 +177,7 @@ height: 100%;
 }
 
 .projects {
+  cursor:pointer;
   position: relative;
 }
 
@@ -326,7 +332,7 @@ height: 100%;
 
 .white-mode .filter-tag {
   background-color: #333;
-  color: white;
+  color: white!important;
 }
 
 /* Text color */
