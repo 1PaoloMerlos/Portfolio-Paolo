@@ -1,43 +1,4 @@
 $(document).ready(function() {
-
-    $('.filter-button').click(function() {
-    // Remove active class from all filter buttons
-    $('.filter-button').removeClass('active');
-    
-    // Add active class to the clicked filter button
-    $(this).addClass('active');
-    
-    var value = $(this).attr('data-filter');
-    if (value === 'projects') {
-      $('.projects-all').show('3000');
-      $('.about-content').hide('5000');
-    } else if (value === 'about') {
-      $('.projects-all').hide('3000');
-      $('.about-content').show('1000');
-    }
-  });
-
-
- 
-  $('.filter-button').click(function() {
-    // Remove active class from all sub-filter buttons
-    $('.filter-button').removeClass('active');
-    
-    // Add active class to the clicked sub-filter button
-    $(this).addClass('active');
-    
-    var value = $(this).attr('data-filter');
-    
-    if (value === 'AllProjects') {
-      $('.showcase-container').hide('1000');
-      $('.projects-container').show('1000');
-    } else if (value === 'Showcase') {
-      $('.projects-container').hide('1000');
-      $('.showcase-container').show('1000');
-    }
-  });
-
-  
   $('.sub-filter-button').click(function() {
     // Remove active class from all sub-filter buttons
     $('.sub-filter-button').removeClass('active');
@@ -61,7 +22,6 @@ $(document).ready(function() {
 
     projectDetails.slideToggle(function() {
       if (isDetailsVisible) {
-        var scrollPosition = project.offset().top;
         var windowHeight = $(window).height();
         var windowScrollTop = $(window).scrollTop();
         var projectTop = project.position().top;
@@ -73,16 +33,28 @@ $(document).ready(function() {
     });
   });
 
-  // Infinite scroll
-  $('#projects-container').scroll(function() {
-    if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-      loadProjects();
-    }
-  });
+  // $(document).ready(function() {
+//   $('.sub-filter-button').click(function() {
+//     $('.sub-filter-button').removeClass('active');
+//     $(this).addClass('active');
 
-  function loadProjects() {
-    // Code to load more projects
-  }
+//     if ($(this).hasClass('active')) {
+//      let filterValue = $(this).attr("data-filter");
+//      if (filterValue == 'all') {
+//       $('.projects').show('1000');
+//     }else {
+//       $('.projects' + `.${filterValue}`).show('1000')
+//       $('.projects').hide('1000');
+
+//     }
+//     }
+
+    
+
+// })})
+
+
+
 });
 
 
