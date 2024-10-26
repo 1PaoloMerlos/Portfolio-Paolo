@@ -14,7 +14,9 @@
   <meta name="google-site-verification" content="A8jq6jM_JJXzQUN_S-fmXxVGGjS6_HEMSvbeQYiSX2s" />
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
   </head>  
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -27,417 +29,70 @@
   <div class="row">
 
 
-    <div class="col-lg-3 LeftCol">
-      <div class="text-center col-12 col-md-12 col-lg-12">
-        <img src="/Portfolio-Paolo/Content/PAOLO MERLOS.webp" class="img-fluid">
+  <div class="col-lg-2 LeftCol">
 
-      </div>
-    
-     <strong> <h3 class="nametitle ">  Paolo Merlos </h3></strong> 
-    
-      <div class="col-12 col-md-12 col-lg-12">
-        <div class="about-content-text about">
-          <h4 class="aboutmetitle">About Me</h4> 
-          <div class="about-details">
-
-            <h6> <p>I've recently earned a multimedia degree from Cyprus University of Technology, and my passions include web development, programming, 3D modeling, and music creation. I have developed these skills throughout my academic career while seeking outstanding qualities and building creativity. My ability to develop dynamic, engaging websites is demonstrated in my web development portfolio, and the projects and applications I've worked on show off my coding prowess.Being able to produce visually stunning 3D models and music additionally provides my expertise depth and dimension.</h6> </p>
-
-        
-     
-           
-          </div>
+    <div class="navigation-section">
+      <div class="sub-filters col-lg-12">
+        <div class="subfilters-buttons"> 
+          <a href="#menu1"><div class="sub-filter-button active" data-filter="profile">Profile</div></a>
+          <a href="#menu2"><div class="sub-filter-button" data-filter="projects">Projects</div></a>
+          <a href="#menu3"><div class="sub-filter-button" data-filter="contact">Contact</div></a>
         </div>
       </div>
+    </div>
 
-      <div class="SocialMedia align-items-end text-center">
-        <a href="#" class="me-4"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/paolo-merlos" class="me-4" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:merlospaolo@gmail.com" class="me-4">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-      <div class="container whitemdoedarkmode">
-        <div class="row">
-        
-          <div class="col-lg-12 d-flex justify-content-center align-items-center"> Toggle Theme:
-            <button class="toggle-button ToggleMode" id="toggle-mode" onclick="toggleMode()">
-              <span class="toggle-ball"></span>
-            </button>
-          </div>
+    <div class="social-media align-items-end text-center">
+      <a href="#" class="me-4"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/paolo-merlos" class="me-4" target="_blank"> <i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="mailto:merlospaolo@gmail.com" class="me-4">
+      <i class="fas fa-envelope"></i>
+    </a>
+    </div>
+
+
+
+  </div>
+
+  <div class="col-lg-10 RightCol">
+
+
+
+    <div class="content-projects-about col-lg-12" >
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade show">
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+          <h3>Menu 3</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
         </div>
       </div>
-
-
- 
-      
-      </div>
-    
-    <div class="col-lg-9 RightCol">
-  
-   
-
-      <div class="Content-projects-about col-lg-12" >
- 
- 
-          
-          <div class="sub-filters col-lg-12 ">
-            <div class="subfilters-buttons"> 
-              <button type="button" class="btn btn-secondary sub-filter-button active" data-filter="all">All</button>
-              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Music">Music Composition</button>
-              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Unity">Unity</button>
-              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="uiux">UI/UX</button>
-              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="Cine">Cinematography</button>
-              <button type="button" class="btn btn-secondary sub-filter-button" data-filter="3D">3D Modelling</button>
-            </div>
-          </div>
-        
-     
-<div class="row projects-all" id="projects-container"> 
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container" >
-          <div class="projects Unity">
-            <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="Unity">Unity</span>
-            <div class="project-thumbnail">
-              <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/Portfolio-Paolo/Content/GT CARS.png" class="d-block w-100">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/Portfolio-Paolo/Content/GT CARS LEVEL 1.png" class="d-block w-100" >
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/Portfolio-Paolo/Content/GT CARS LEVEL 2.png" class="d-block w-100">
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <h3>GT Cars</h3>
-            <div class="project-details">
-              <p>Our objective is to create a fun game with innovative mechanics and a fresh user experience. We made the decision to develop a game exclusively for computer platforms in light of the present environment, in which more people stay at home and spend a lot of time on their computers.</p>
-              <p>The players goal in this game is to cross the finish line while gathering coins and keys. However, they must travel over treacherous terrain that is dotted with several hazards designed to slow them down and keep them from finishing the race. Players can unlock different cars to outrun the chasing cops and increase their chances of success by collecting coins.</p>
-              
-<p> The project was collaboratively created in Unity using C#.</p>
-
-<div class="align-items-end text-center SocialMedia"> 
-  <a href="https://youtu.be/2VT4H-Hrcn8" target="_blank" class="me-2 ">
-    <i class="fab fa-youtube " >
-  
-    </i></a>
+    </div>
   </div>
 
 
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container">
-            <div class="projects Music">
-              <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="Music">Music</span>
-              <div class="project-thumbnail">
-                <img src="/Portfolio-Paolo/Content/PATH.jpg">               
-              </div>
-              <h3>PATH (MUSIC)</h3>
-              <div class="project-details">
 
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1632442849&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/pmerlos" title="Paolo Merlos" target="_blank" style="color: #cccccc; text-decoration: none;">Paolo Merlos</a> · <a href="https://soundcloud.com/pmerlos/sets/path-soundtrack" title="PATH Soundtrack" target="_blank" style="color: #cccccc; text-decoration: none;">PATH Soundtrack</a></div>
-
-               <p>Using a mix of FL Studio and Audacity, two potent programs recognized for their audio creation skills, these musical compositions were carefully created. They were made exclusively to improve the virtual reality game development project for the MGA-498 course's immersive experience. These compositions, in particular, were effectively created to define the distinctive aesthetic and ambiance of numerous enthralling worlds within the game, which is appropriately named PATH.</p> 
-               <p> My considerable contribution as a key player in this team effort involved creating a variety of musical compositions that melded with the developing gameplay.</p> 
-
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container">
-            <div class="projects Unity">
-              <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="Unity">Unity</span>
-              <div class="project-thumbnail">
-                <img src="/Portfolio-Paolo/Content/PATH.jpg">               
-              </div>
-              <h3>PATH (Unity)</h3>
-              <div class="project-details">
-
-<p>I had an opportunity to be a part of a small team developing a VR game. I not only contributed to the game's engaging musical soundtracks, but I also had a significant impact on the coding and development of the game. 
-</p>
-<p>Players are invited to set out on a voyage across a beautifully detailed universe in this immersive virtual reality experience, which doubles as an exploration and walking simulator game. The game concentrates around the topic of Rebirth and dives into the fascinating story of three gods in the afterlife. It is filled with sophisticated riddles, difficult activities, and an engaging plot.</p>
-
-                <div class="SocialMedia-path text-center">
-                    <div class="logo_path SocialMedia-path">
-                      
-                      <a href="https://www.instagram.com/path.vr_game/" target="_blank" class="me-2"><i class="fab fa-instagram"></i></a>
-                    
-                      <a href="http://path.cutwebdev.com/" target="_blank" class="me-2">
-                    
-                      
-
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232.3 219.02" class="path-logo">
-                        <style>
-                          .cls-2 {
-                            fill: #fff;
-                          }
-
-                          
-                        </style>
-                        <defs>
-                         
-                        </defs>
-                        <g id="Layer_2" data-name="Layer 2">
-                          <g id="Layer_1-2" data-name="Layer 1">
-                            <path class="cls-2" d="M119.86,165.86a118.22,118.22,0,0,1-8.06,49.23,5.8,5.8,0,0,1-5.28,3.93H5.82c-4.56,0-7.35-5.84-4.93-10.35L68.21,83c1.74-3.24,5.42-4.15,8.16-2C101.66,100.28,118.1,131.59,119.86,165.86Z"></path>
-                            <path class="cls-2" d="M152.8,219c-4,0-6.81-4.65-5.46-9.07A127.34,127.34,0,0,0,153,170.1c-1.23-61.74-47.8-103-60.69-114.46-.7-.63-1.4-1.23-2.08-1.82a7.48,7.48,0,0,1-1.49-9L111,3.19c2.28-4.25,7.59-4.25,9.87,0L231.4,208.65c2.42,4.51-.36,10.36-4.93,10.36Z"></path>
-                          </g>
-                        </g>
-                      </svg>
-                    </div>
-                  </a>
-                 
-                  
-                  
-                  
-                </div>
-
-            
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container">
-            <div class="projects uiux">
-              <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="uiux">UI/UX</span>
-              <div class="project-thumbnail">
-                <img src="/Portfolio-Paolo/Content/iNav.jpg">               
-              </div>
-              <h3>iNav</h3>
-              <div class="project-details">
-<p>  The application is about inclusivity and accessibility, it was designed to fulfill the needs of its target customers. With a guidance system that it has, it enables people with visual impairment to be fully independent inside a supermarket, making their shopping experience more enjoyable</p>
-<p> 
-In this collaborative project my part was the creation and improvement of the UI and UX of the application. Developing both low and high fidelity models for the mobile application using my knowledge with technologies like Axure. I aimed to create a seamless and interesting user interface for users to interact with through a combination of clever layout and intuitive user experiences. I made sure that each aspect of the UI and UX was carefully created in accordance with the project's objectives and user expectations by working closely with the team. Delivering a top-notch product required this thorough attention to detail and commitment to making a visually stunning and user-friendly application.
-
-</p>
-
-
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="img-fluid" src="/Portfolio-Paolo/Content/1.JPG" alt="Slide 1">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="/Portfolio-Paolo/Content/4.JPG" alt="Slide 2">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="/Portfolio-Paolo/Content/9.JPG" alt="Slide 3">
-    </div>
-    <div class="carousel-item">
-      <img class="img-fluid" src="/Portfolio-Paolo/Content/11.JPG" alt="Slide 4">
-    </div>
   </div>
 
-</div>
-
-
-<div class="align-items-end text-center SocialMedia"> 
-<a href="https://www.youtube.com/watch?v=xQD1Pmg_-uE" target="_blank" class="me-2 ">
-  <i class="fab fa-youtube " >
-
-  </i></a>
-</div>
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container">
-            <div class="projects Cine">
-              <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="Cine">Cinematography</span>
-              <div class="project-thumbnail">
-                    <img src="/Portfolio-Paolo/Content/closeddoors.png">       
-              </div>
-              <h3>Κλειστές πόρτες</h3>
-              <div class="project-details">
-
-               
-
-               <p>This short film was produced in collaboration within the framework of Cinematographic Production II, for the Cyprus Police, with the goal of addressing and combating domestic violence through visual storytelling.</p> 
-               <div class="align-items-end text-center SocialMedia"> 
-                <a href="https://youtu.be/q6_Qq-Vot2Q" target="_blank" class="me-2 ">
-                  <i class="fab fa-youtube " >
-                
-                  </i></a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container">
-            <div class="projects 3D">
-              <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="3D">3D Modelling</span>
-              <div class="project-thumbnail">
-                    <img src="/Portfolio-Paolo/Content/World1.jpg">       
-              </div>
-              <h3>Abandoned bunker</h3>
-              <div class="project-details">
-
-               
-<div class="abandonedbunker"> 
-
-  
-<p> These 3D objects were brought to life using the application called Maya. As part of the immersive experience offered in the lesson 3D Modeling II. <p> Within this creative context, an abandoned dystopian bunker was designed, reflecting the harsh realities of a post-apocalyptic world ravaged by a catastrophic nuclear conflict, leading up in a harrowing battle for survival. </p></p>
-
-
-  
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/Portfolio-Paolo/Content/World2.jpg" alt="Slide 1">
-      </div>
-      <div class="carousel-item">
-        <img  src="/Portfolio-Paolo/Content/World3.jpg" alt="Slide 2">
-      </div>
-      <div class="carousel-item">
-        <img  src="/Portfolio-Paolo/Content/World4.jpg"alt="Slide 3">
-      </div>
-      <div class="carousel-item">
-        <img  src="/Portfolio-Paolo/Content/World5.jpg" alt="Slide 4">
-      </div>
-    </div>
-  
-  </div>
-
-
-            
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-12 col-lg-4">
-          <div class="project-container" data-filter="3D">
-            <div class="projects 3D">
-              <span class="filter-tag btn btn-secondary sub-filter-button" data-filter="3D">3D Modelling</span>
-              <div class="project-thumbnail">
-                    <img src="/Portfolio-Paolo/Content/Cars/rx7.jpg">       
-              </div>
-              <h3>A Car Race</h3>
-              <div class="project-details">
-
-               
-<div class="racingcars"> 
-
-  
-<p>Embarking on a thrilling journey of speed and rivalry, I crafted captivating 3D models of the legendary R32 Skyline and the iconic RX-7, putting them against each other in a race. These detailed creations took form during an immersive exploration of the car world bringing them to life using the application Maya.</p>
-
-
-  
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/Portfolio-Paolo/Content/Cars/car base.png" alt="Slide 1">
-    </div>
-    <div class="carousel-item">
-      <img  src="/Portfolio-Paolo/Content/Cars/r32 progress.png" alt="Slide 2">
-    </div>
-    <div class="carousel-item">
-      <img   src="/Portfolio-Paolo/Content/Cars/r32 progress.jpg" alt="Slide 3">
-    </div>
-   
-  </div>
-
-</div>
-
-<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/Portfolio-Paolo/Content/Cars/rx7 front.png" alt="Slide 1">
-    </div>
-    <div class="carousel-item">
-      <img  src="/Portfolio-Paolo/Content/Cars/rx7 model.jpg" alt="Slide 2">
-    </div>
-
-   
-  </div>
-
-</div>
-
-<div class="SocialMedia align-items-end text-center">
-  <div>
-  Skyline Interactive Model
-  <a href="https://1paolomerlos.github.io/Portfolio-Paolo/skyline.html" class="me-4" target="_blank"><i class="fa-sharp fa-solid fa-link" style=" margin-left:15px; margin-top: 15px; z-index: 9999;"></i></a>
-</div>
-  <div> RX7 Interactive Model
-  <a href="https://1paolomerlos.github.io/Portfolio-Paolo/RX7.html" class="me-4" target="_blank"><i class="fa-sharp fa-solid fa-link" style=" margin-left:15px; margin-top: 15px; z-index: 9999;"></i></a>
-</div>
-</div>
-
-
-            
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-
-
-    </div>
-   
-
-     
-    </div>
   </div>
 </div>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
 <script src="https://kit.fontawesome.com/5764e0694b.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
-<script>
-  function toggleMode() {
-    var button = document.getElementById("toggle-mode");
-    var ball = button.querySelector(".toggle-ball");
-    var body = document.body;
-  
-    if (button.classList.contains("active")) {
-      button.classList.remove("active");
-      ball.style.transform = "translateX(0)";
-    } else {
-      button.classList.add("active");
-      ball.style.transform = "translateX(40px)";
-    }
-  
-    body.classList.toggle("white-mode");
-  }
-</script>
-
-<!-- <script>
-  const button = document.getElementById("toggle-mode");
-  const body = document.body;
-
-  button.addEventListener("click", function() {
-    body.classList.toggle("white-mode");
-  });
-</script> -->
 </body>
 </html>
