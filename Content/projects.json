@@ -1,0 +1,10 @@
+[
+    
+    {
+        "id":"project-1",
+        "name": "Project One",
+        "description": "This is the first project.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "url": "/content/calculator-project/calculator.html"
+    }
+]
