@@ -1,7 +1,6 @@
 node_modules/
 .tailwind/
 *.log
-/package-lock.json
 .htaccess
 /input.css
 /index-2.html
