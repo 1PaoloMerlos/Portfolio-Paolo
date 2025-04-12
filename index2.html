@@ -11,27 +11,98 @@
   <meta name="google-site-verification" content="meta_code" />
   <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/Content/scripts/script.js"></script>
-    <link rel="stylesheet" type="text/css" href="/src/output.css">
+    <script src="Content/scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/output.css">
   </head>  
   <title>Paolo Merlos</title>
 </head>
 <body>
 
   
-  <header>
-    <h1 class="text-3xl font-bold p-5">Currently Under Maintainance !</h1>
-</header>
-<section class="mx-auto flex max-w-md overflow-hidden rounded-xl bg-black shadow-md md:max-w-2xl p-5">
-    <h2 class="text-white">Projects</h2>
-    <div class="projects p-5 text-white">
-    </div>
-</section>
+  <h<body class=" bg-gray-50">
 
-<section class="content-projects text-white bg-black md:max-w-2xl ">
-
-
-</section>
-
+    <!-- Header -->
+    <header class="bg-gray-800 text-white">
+      <nav class="container mx-auto flex justify-between items-center w-full h-full p-0 ">
+        <div class="text-2xl font-bold"> <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" style="fill:rgba(255, 0, 0, 0.712);">
+              <animate attributeName="cy" from="-20" to="100" begin="0s" dur="4s" repeatCount="indefinite" /></circle>  
+          </svg>
+        </div>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="hover:text-gray-300">About</a></li>
+        <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
+        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
+        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+      </nav>
+    </header>
+  
+    <!-- Hero Section -->
+    <section class="h-screen bg-cover bg-center text-white" style="background-image: url('https://via.placeholder.com/1920x1080');">
+      <div class="flex justify-center items-center h-full bg-black bg-opacity-50">
+        <div class="text-center">
+          <h1 class="text-5xl font-bold">Welcome to My Portfolio</h1>
+          <p class="mt-4 text-xl">I'm a Web Developer</p>
+        </div>
+      </div>
+    </section>
+  
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <p class="mt-4 text-xl">A passionate web developer focused on creating impactful websites and applications. I specialize in frontend development with a love for UI/UX design.</p>
+        <div class="mt-8">
+          <img src="#" alt="" class="mx-auto rounded-full">
+        </div>
+      </div>
+    </section>
+  
+    <section id="skills" class="py-16 bg-gray-100 md:flex md:justify-center sm:flex-col" >
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold">My Skills</h2>
+        <div class="mt-8 grid grid-cols-3 gap-12">
+          <div class="flex flex-col items-center">
+            <div class="text-4xl">HTML</div>
+            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="text-4xl">CSS</div>
+            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="text-4xl">JavaScript</div>
+            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="projects" class="mx-auto flex overflow-hidden w-full bg-black shadow-md  p-5">
+      <h2 class="text-white">Projects</h2>
+      <div class="projects p-5 text-white flex flex-row items-center justify-center mx-auto gap-4">
+        <section class="content-projects text-white bg-black md:max-w-2xl">
+        </section>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <form class="mt-8 max-w-lg mx-auto">
+          <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-md" required>
+          <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md" required>
+          <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded-md" required></textarea>
+          <input type="file" placeholder="file" class="w-full p-3 mb-4 border rounded-md">
+          <button type="submit" class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-300">Submit</button>
+        </form>
+      </div>
+    </section>
+  <footer class="bg-gray-800 text-white py-4 text-center">
+    All rights reserved &copy; 2025 Paolo Merlos
+  </footer>
+  
 </body>
 </html>

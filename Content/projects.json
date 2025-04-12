@@ -5,6 +5,15 @@
         "name": "Project One",
         "description": "This is the first project.",
         "technologies": ["HTML", "CSS", "JavaScript"],
-        "url": "/content/calculator-project/calculator.html"
+        "url": "/content/calculator-project/calculator.html",
+        "image": "/assets/images/projects/project-1.jpg"
+    },
+    {
+        "id":"project-2",
+        "name": "Project One",
+        "description": "This is the first project.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "url": "/content/calculator-project/calculator.html",
+        "image": "/assets/images/projects/project-1.jpg"
     }
 ]
