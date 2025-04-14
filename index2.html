@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="google-site-verification" content="meta_code" />
   <head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="Content/scripts/script.js"></script>
     <link rel="stylesheet" type="text/css" href="src/output.css">
   </head>  
   <title>Paolo Merlos</title>
@@ -110,31 +108,34 @@
       </div>
     </section>
   
-    <section id="projects" class="mx-auto md:max-h-96 flex overflow-hidden w-full bg-black shadow-md items-center">
-      <div class="bg-white p-5 h-auto md:max-h-screen flex items-center h-screen gap-4"><h2 class="text-black text-3xl">Projects</h2></div>
+    <section id="projects" class="mx-auto md:max-h-96 flex overflow-hidden w-full bg-gray-800 shadow-md items-center">
+      <!-- <div class=" p-5 h-auto md:max-h-screen flex items-center h-screen gap-4"><h2 class="text-white text-3xl">Projects</h2></div> -->
       <!-- Generated Projects -->
-      <div class="projects p-5 text-white flex flex-row items-center justify-center mx-auto gap-4">
+      <!-- <div class="projects p-5 text-white flex flex-row items-center justify-center mx-auto gap-4">
         <section class="content-projects text-white bg-black md:max-w-2xl">
         </section>
-      </div>
+      </div> -->
+      <div class=" p-5 h-auto md:max-h-screen flex items-center h-screen gap-4 flex text-center align-middle justify-center"><h2 class="text-white text-3xl">Coming Soon </h2></div>
     </section>
   
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-gray-100">
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold">Contact Me</h2>
-        <form class="mt-8 max-w-lg mx-auto">
-          <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded-md" required>
-          <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md" required>
-          <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded-md" required></textarea>
-          <input type="file" placeholder="file" class="w-full p-3 mb-4 border rounded-md">
-          <button type="submit" class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-300">Submit</button>
+        <form class="mt-8 max-w-lg mx-auto" action="form_code"
+        method="POST" id="contact-form" enctype="multipart/form-data">
+          <input  id="name" type="text" placeholder="Your Name"  name="name"class="w-full p-3 mb-4 border rounded-md" required>
+          <input  id="email" type="email"  name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md" required>
+          <textarea id="message" type="text" placeholder="Your Message" name="message" class="w-full p-6 mb-4 border rounded-md" required></textarea>
+          <!-- <input id="file" type="file" placeholder="file" name="file" class="w-full p-3 mb-4 border rounded-md">form input doesn't work in formspree -->
+          <button type="submit" id="submit" class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-300">Submit</button>
         </form>
-      </div>
+      </div>      
     </section>
   <footer class="bg-gray-800 text-white py-4 text-center">
     All rights reserved &copy; 2025 Paolo Merlos
   </footer>
-  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Content/scripts/script.js"></script>
 </body>
 </html>
