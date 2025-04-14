@@ -122,8 +122,14 @@
     <section id="contact" class="py-16 bg-gray-100">
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold">Contact Me</h2>
-        <form class="mt-8 max-w-lg mx-auto" action="form_code"
+        <form class="mt-8 max-w-lg mx-auto" action="https://formspree.io/f/mrbpdgva"
         method="POST" id="contact-form" enctype="multipart/form-data">
+        <!--- let formspree handle the form submission 🐣🔥-->
+          <label for="name" class="sr-only">Name</label>
+          <label for="email" class="sr-only">Email</label>
+          <label for="message" class="sr-only">Message</label>
+          <label for="_gotcha" class="sr-only">Spam Trap</label>
+        <input type="text" name="_gotcha" style="display:none">
           <input  id="name" type="text" placeholder="Your Name"  name="name"class="w-full p-3 mb-4 border rounded-md" required>
           <input  id="email" type="email"  name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md" required>
           <textarea id="message" type="text" placeholder="Your Message" name="message" class="w-full p-6 mb-4 border rounded-md" required></textarea>

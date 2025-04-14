@@ -3,4 +3,4 @@ node_modules/
 *.log
 .htaccess
 /input.css
-/index-2.html
+.github
