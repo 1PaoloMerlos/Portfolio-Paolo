@@ -1,7 +1,7 @@
 $(document).ready(function() {
     //projects 
     //append content for each project from json file using their id and add their id from json as #id
-    $.getJSON('content/projects.json', function (data) {
+    $.getJSON('Content/projects.json', function (data) {
         $.each(data, function (index, project) {
             const projectId = `${project.id}`;
             $('.projects').append(`
