@@ -17,6 +17,19 @@ $(document).ready(function () {
         });
     });
 
+
+
+$('#mobileNavbar').on('click', function (event) { 
+    if ($('#navbar-hamburger').hasClass('hidden')) {
+        $('#navbar-hamburger').removeClass('hidden');
+    } 
+    else {
+        $('#navbar-hamburger').addClass('hidden');
+    }
+});
+
+/* ======================== =========== CONTACT FORM  ============= ======================= */
+
     document.addEventListener("DOMContentLoaded", function () {
         const contactForm = document.querySelector("#contact-form");
         const fields = {
