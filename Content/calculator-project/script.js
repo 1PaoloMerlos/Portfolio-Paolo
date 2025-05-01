@@ -1,46 +1,63 @@
 $(document).ready(function() {
     let display = document.getElementById('display');
-    let currentOperation = '';
-    let firstOperand = '';
-    let secondOperand = '';
+    let operator = document.getElementById('operator');
+    let firstNumber = '';
+    let secondNumber = '';
+    let equals = false;
+    let calcCount = 0;
 
-    function appendNumber (number) {
-        display.value += number;
-    }
-
-    function performOperation(operation) {
-        firstOperand = display.value;
-        currentOperation = operation;
-        display.value = '';
-    }
-
-    function calculateResult() {
-        
-        secondOperand = display.value;
-    }
-
-    function clearDisplay() {
-        display.value = '';
-        firstOperand = '';
-        secondOperand = '';
-        currentOperation = '';
-    }
-
-    function isNumber(value) {
-        return !isNaN(value);
-    }
-
-
+    $('equals').click(function() { 
+        equals = true;
+    })
 
     $('button').click(function() {
-        const elementValue = $('button').val(); 
+       var element = $(this).text(); 
 
-        if (isNumber(elementValue)) {
-            console.log('The element contains a number.');
+        if (this.id === "operator") { elementOperator = $(this).text(); calcCount++;} 
+        if (this.id === "equals") {  
+            result = applyOperator(firstNumber, elementOperator, secondNumber);
+            display.innerHTML = result;
+            calcCount = 0;  }
+        else { element = parseInt($(this).text()); }
+        
+        if (calcCount === 0) { 
+            firstNumber = element; 
+            display.innerHTML = firstNumber; 
+            calcCount++;
+            //operator.innerHTML = elementOperator; 
+        } else if (calcCount === 1) { 
+            secondNumber = element; 
+            display.innerHTML = secondNumber; 
+           // operator.innerHTML = elementOperator; 
+            calcCount= 0;
+        } 
 
-        } else {
-            console.log('The element does not contain a number.');
+        console.log('Element value:', element); 
+
+        function applyOperator(a, op, b) { 
+            switch(op) {
+                case '+': return a + b;
+                case '-': return a - b;
+                case '*': return a * b;
+                case '/': return a / b;
+                case '%': return a % b;
+                default: return NaN;
+              }
         }
+
+    })
+
+$('#clear').click(function() {
+    firstNumber = '';
+    secondNumber = '';
+    operator.innerHTML = '';
+    display.innerHTML = '0';
+})
+
+    
+
+
+  
+
     });
 
-});

@@ -4,47 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" type="text/css" href="/src/output.css">
 </head>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="script.js"></script>
-<link rel="stylesheet" type="text/css" href="/src/output.css">
 <body>
 <div><a href="/Portfolio-Paolo/"><button> <- Back</button></a> </div>
 
     <div id="calculator">
         <div class="inside-calculator">
 <fieldset>
-    <legend>Calculator</legend>
-    <input type="text" id="display" disabled>
+    <legend class="text-5xl font-bold">Calculator</legend>
+    <input type="text" class="text-black" id="display" >
 </fieldset>
-<div> <button>Clear</button>
+<div> <button id="clear" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Clear</button>
 </div>
 <div class="row"> 
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>*</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">1</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">2</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">3</button>
+    <button id="operator" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">*</button>
 </div>
 <div class="row"> 
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>/</button>
+    <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">4</button>
+    <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">5</button>
+    <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">6</button>
+    <button id="operator"  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">/</button>
 
 </div>
 <div class="row"> 
-    <button class="test11">7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>%</button>
+    <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">7</button>
+    <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">8</button>
+    <button  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">9</button>
+    <button id="operator" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">%</button>
 </div>
 <div class="row"> 
-    <button style="width:100px">0</button>
-    <button>+</button>
-    <button>-</button>
-
-
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style="width:100px">0</button>
+    <button id="operator" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">+</button>
+    <button id="operator" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" >-</button>
 </div>
+<div class="row">
+    <button id="equals" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">=</button>
     </div>
 </div>
 </body>
