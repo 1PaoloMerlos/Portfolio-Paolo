@@ -30,108 +30,178 @@
   <body class=" bg-gray-50">
 
     <!-- Header -->
-    <header class="bg-gray-800 text-white">
-      <nav class="container mx-auto flex justify-between items-center w-full h-full p-0 m-0 ">
-        <div class="text-2xl font-bold pl-[15px]"> 
-          <svg width="50" height="72" class="h-full" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="15" style="fill:rgba(255, 0, 0, 0.712);">
-                <animate attributeName="cy" from="-20" to="100" begin="0s" dur="4s" repeatCount="indefinite" /></circle>  
-          </svg>
-        </div>
-      <ul class="flex space-x-6 max-md:hidden">
-        <li><a href="#about" class="hover:text-gray-300">About</a></li>
-        <li><a href="#skills" class="hover:text-gray-300">Skills</a></li>
-        <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-        <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-      </ul>
-      <nav id="mobileNavbar" class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex space-x-6  min-xl:hidden min-lg:hidden min-md:hidden">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+     <menu>
+      <header class="bg-white text-white md:rounded-lg max-md:rounded-s-lg">
+        <nav class="container flex-col md:p-2 mx-auto flex justify-between items-center w-full h-full m-0 ">
+          <!-- <div class="text-2xl font-bold pl-[15px]"> 
+            <svg width="50" height="72" class="h-full" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="15" cy="15" r="15" style="fill:rgba(255, 0, 0, 0.712);">
+                  <animate attributeName="cy" from="-20" to="100" begin="0s" dur="4s" repeatCount="indefinite" /></circle>  
             </svg>
-          </button></a>
-         
-        </div>
-      </nav>
-      </nav>
-      <div class="hidden w-full absolute" id="navbar-hamburger">
-        <ul class="flex flex-col font-medium rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
-          <li>
-            <a href="#about" class="block py-2 px-3 text-white bg-blue-700 rounded-sm dark:bg-blue-600" aria-current="page">About</a>
-          </li>
-          <li>
-            <a href="#skills" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Skills</a>
-          </li>
-          <li>
-            <a href="#projects" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
-          </li>
+          </div> -->
+        <ul class="flex justify-center text-center max-md:hidden flex-col p-0">
+          <a href="#skills" class="text-black hover:text-gray-300 hover:rounded-lg hover:bg-gray-700 p-3">
+            <li>Skills</li></a>
+          <a href="#projects" class="text-black hover:text-gray-300 hover:rounded-lg hover:bg-gray-700 p-3">
+            <li>Projects</li></a>
+          <a href="#contact" class="text-black hover:text-gray-300 hover:rounded-lg hover:bg-gray-700 p-3">
+            <li>Contact</li></a>
         </ul>
-      </div>
-    </header>
+        <nav id="mobileNavbar" class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 flex space-x-6  min-xl:hidden min-lg:hidden min-md:hidden rounded-s-lg">
+          <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 w-20 justify-center">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <button data-collapse-toggle="navbar-hamburger" type="button" class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-white w-fit" aria-controls="navbar-hamburger" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+            </button></a>
+          
+          </div>
+        </nav>
+        </nav>
+        <div class="hidden w-full rounded-sm" id="navbar-hamburger">
+          <ul class="flex flex-col font-medium bg-gray-50 dark:bg-gray-800 dark:border-gray-700 rounded-s-lg ">
+            <li>
+              <a href="#skills" class="block py-2 px-2 text-gray-900 rounded-s-lg hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Skills</a>
+            </li>
+            <li>
+              <a href="#projects" class="block py-2 px-2 text-gray-900 rounded-s-lg hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="block py-2 px-2 text-gray-900 rounded-s-lg hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    </menu>
   
     <!-- Hero Section -->
     <section class="h-screen bg-cover bg-center text-white" style="background-image: url('#');">
       <div class="flex justify-center items-center h-full bg-black bg-opacity-50">
-        <div class="text-center">
-          <h1 class="text-5xl font-bold">Welcome to My Portfolio</h1>
+        <div class="text-center max-md:m-5">
+          <h5 class="mb-5">Hi, I’m Paolo </h5>
+          <h1 id="typer" class="text-5xl font-bold mb-5">Welcome to My Portfolio :)</h1>
+          <h2 id="typer" class="mb-1">I like coding and messing around with computers.</h2>
+          <h2 id="typer">I enjoy making things work.</h2>
           <p class="mt-4 text-xl"></p>
         </div>
       </div>
     </section>
   
     <!-- About Section -->
-    <section id="about" class="pt-12 bg-white">
-      <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-bold">About Me</h2>
-        <p class="mt-4 text-xl">A passionate web developer focused on creating impactful websites and applications.</p>
+    <section id="about" class="pt-12 bg-white h-[40vh] max-md:m-5 h-full">
+      <div class="container text-center mx-auto">
+        <p class="mt-4 text-xl">Focused on creative, fun and impactful applications.</p>
         <div class="mt-8">
           <img src="#" alt="" class="mx-auto rounded-full">
         </div>
       </div>
-    </section>
-  
-    <section id="skills" class="py-16 bg-gray-100 " >
+      <section id="skills" class="py-16" >
       <div class="container mx-auto text-center  ">
-        <h2 class="text-3xl font-bold">My Skills</h2>
-        <div class="md:mt-8 md:grid md:grid-cols-4 md:gap-12  max-md:flex max-md:flex-col max-md:gap-10 max-md:mt-8">
-          <div class="flex flex-col items-center">
-            <div class="text-4xl">HTML</div>
-            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+        <div class="md:mt-8 md:grid md:grid-cols-8 md:gap-12 max-md:justify-center max-md:flex max-md:flex-row max-md:flex-wrap max-md:gap-10 max-md:mt-8">
+       
+          <!-- HTML -->
+          <div class="flex flex-col items-center group" data-filter="html">
+            <svg class="w-12 h-12 text-gray-800 group-hover:text-orange-600 transition-colors" 
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z"/>
+            </svg>
           </div>
-          <div class="flex flex-col items-center">
-            <div class="text-4xl">CSS</div>
-            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+          <!-- CSS -->
+          <div class="flex flex-col items-center group" data-filter="css">
+            <svg class="w-12 h-12 text-gray-800 group-hover:text-blue-600 transition-colors" 
+                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="m3 2 1.578 17.834L12 22l7.468-2.165L21 2H3Zm13.3 14.722-4.293 1.204H12l-4.297-1.204-.297-3.167h2.108l.15 1.526 2.335.639 2.34-.64.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506l-.954 10.71Z"/>
+            </svg>
           </div>
-          <div class="flex flex-col items-center">
-            <div class="text-4xl">JavaScript</div>
-            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+          <!-- JavaScript -->
+          <div class="flex flex-col items-center group"  data-filter="js">
+            <svg class="w-12 h-12 text-gray-800 group-hover:text-yellow-400 transition-colors">
+            <path d="M0.0469711 0.694763L3.13247 39.1257L16.979 43.3947L30.863 39.1207L33.9515 0.696429H0.0454712L0.0469711 0.694763ZM12.839 10.6469L12.2255 18.0439L26.732 18.0456L26.6285 19.3115L25.631 31.7204L25.568 32.5165L16.862 35.1965L8.16797 32.5165L7.57397 25.1162H11.834L12.137 28.8755L16.868 30.2912L21.602 28.8721L22.094 22.7593L7.58747 22.7576L7.69097 21.4918L8.68847 9.08285L9.00197 5.60836H25.9325L26.129 8.27003L26.7335 15.6871H22.472L22.079 10.8201L17.7455 10.5303H16.973V10.5236L12.8405 10.6469H12.839Z" fill="currentColor"/>
+            </svg>
           </div>
-          <div class="flex flex-col items-center">
-            <div class="text-4xl">PHP</div>
-            <div class="w-32 h-1 bg-gray-800 mt-2"></div>
+          <!-- Tailwind CSS -->
+          <div class="flex flex-col items-center group" data-filter="tailwind">
+            <svg class="w-12 h-12 text-gray-800 group-hover:text-sky-400 transition-colors"  fill="currentColor" viewBox="0 0 24 24">
+            <path d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z"/>
+            </svg> 
           </div>
+          <!-- PHP -->
+          <div class="flex flex-col items-center group" data-filter="php">
+            <svg width="48" height="54" viewBox="0 0 48 54" class="transition-colors w-12 h-12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2_7)">
+                <path class="fill-black group-hover:fill-violet-900 transition-colors" d="M38.7128 20.9845C38.0094 20.9845 37.5315 21.057 37.2792 21.1394V26.1589C37.579 26.2314 37.9411 26.2578 38.4398 26.2578C40.2829 26.2578 41.4197 25.2262 41.4197 23.4827C41.4168 21.9205 40.4403 20.9845 38.7128 20.9845Z"/>
+                <path class="fill-black group-hover:fill-violet-900 transition-colors" d="M44.9369 0H3.06604C1.37423 0 0 1.52267 0 3.40129V49.8987C0 51.7707 1.37126 53.2967 3.06604 53.2967H44.9369C46.6287 53.2967 48 51.7707 48 49.8987V3.40129C48 1.52267 46.6287 0 44.9369 0ZM14.5555 27.4212C13.3742 28.6572 11.6231 29.2109 9.57804 29.2109C9.12392 29.2109 8.71432 29.1845 8.39674 29.135V35.2191H4.96562V18.4368C6.03413 18.2358 7.53302 18.0842 9.64927 18.0842C11.7833 18.0842 13.3089 18.5423 14.33 19.4486C15.3094 20.3088 15.9683 21.7195 15.9683 23.3838C15.9683 25.0482 15.4667 26.4621 14.5555 27.4212ZM30.8147 35.2191H27.3599V28.1002H21.6582V35.2191H18.1796V18.2127H21.6582V24.7483H27.3599V18.2127H30.8147V35.2191ZM43.438 27.4212C42.2597 28.6572 40.5085 29.2109 38.4606 29.2109C38.0094 29.2109 37.5968 29.1845 37.2793 29.135V35.2191H33.8511V18.4368C34.9166 18.2358 36.4155 18.0842 38.5318 18.0842C40.6688 18.0842 42.1885 18.5423 43.2125 19.4486C44.1919 20.3088 44.8509 21.7195 44.8509 23.3838C44.8479 25.0482 44.3492 26.4621 43.438 27.4212Z"/>
+                <path class="fill-black group-hover:fill-violet-900 transition-colors" d="M9.83032 20.9845C9.12391 20.9845 8.64902 21.057 8.39673 21.1394V26.1589C8.69354 26.2314 9.05565 26.2578 9.55725 26.2578C11.3975 26.2578 12.5343 25.2262 12.5343 23.4827C12.5343 21.9205 11.5577 20.9845 9.83032 20.9845Z"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_2_7">
+                  <rect width="48" height="53.3" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <!--Wordpress-->
+          <div class="flex flex-col items-center group" data-filter="wordpress">
+            <svg class="w-12 h-12 text-black group-hover:text-[#00759D] transition-colors" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 48 54">
+            <path  d="M45.06 13.8637C45.1632 14.7139 45.2208 15.6222 45.2208 16.6029C45.2208 21.288 44.8296 21.552 36.0648 49.6864C43.2 45.0653 48 36.4812 48 26.65C48 22.0156 46.9344 17.6587 45.06 13.8637ZM24.4224 28.9819L17.22 52.2147C22.08 53.8031 27.2304 53.6413 31.9704 51.7918C31.9056 51.6772 31.848 51.5542 31.8 51.4236L24.4224 28.9819ZM40.2024 25.3045C40.2024 22.0105 39.1368 19.7285 38.2224 17.9536C37.008 15.7577 35.8656 13.9009 35.8656 11.7049C35.8656 9.25578 37.5408 6.9748 39.8976 6.9748C40.0032 6.9748 40.104 6.99029 40.2072 6.99562C35.9376 2.65167 30.2496 0 24 0C15.6168 0 8.23921 4.77524 3.94801 12.0107C5.47681 12.064 7.52879 12.086 11.8896 11.7075C13.1832 11.6222 13.3344 13.7323 12.0432 13.9002C12.0432 13.9002 10.7424 14.0712 9.2952 14.1565L18.036 43.0239L23.2872 25.5309L19.548 14.1539C18.2568 14.0713 17.0328 13.9002 17.0328 13.9002C15.7392 13.8149 15.8904 11.6196 17.184 11.7049C22.1448 12.1287 24.684 12.1606 29.9016 11.7049C31.1952 11.6196 31.3488 13.7296 30.0552 13.9002C30.0552 13.9002 28.752 14.0713 27.3072 14.1539L35.9808 42.8027C39.4056 30.0959 40.2024 27.9695 40.2024 25.3045ZM0 26.65C0 37.1981 5.52 46.315 13.5264 50.635L2.07839 15.8039C0.746394 19.1192 0 22.7857 0 26.65Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <!--Github-->
+          <div class="flex flex-col items-center group" data-filter="github">
+            <div class="w-12 h-12 flex items-center justify-center bg-black rounded-full group-hover:bg-white transition-colors">
+              <svg class="w-12 h-12 text-white group-hover:text-black transition-colors" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"/>
+              </svg>
+            </div>
+          </div>
+          <!--Python-->
+          <div class="flex flex-col items-center group" data-filter="python">
+            <svg width="48" height="53" viewBox="0 0 50 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-black group-hover:fill-[url(#paint0_linear_5_26)] transition-colors"
+                      d="M24.8275 3.49783C14.1775 3.49783 14.851 8.6113 14.851 8.6113V13.9246H24.979V15.5903H10.8175C10.8175 15.5903 4 14.6575 4 26.6583C4 38.6592 10.0195 38.1712 10.0195 38.1712H13.495V32.573C13.495 32.573 13.3 25.8888 19.345 25.8888H29.488C29.488 25.8888 35.146 25.9888 35.146 19.806V9.66064C35.146 9.66064 36.004 3.47784 24.883 3.47784L24.8275 3.49783ZM19.2295 7.05727C19.5896 7.04719 19.9442 7.15589 20.2486 7.36964C20.5531 7.58338 20.7936 7.89257 20.9397 8.2581C21.0859 8.62363 21.1312 9.02908 21.0698 9.42318C21.0084 9.81728 20.8432 10.1823 20.595 10.4721C20.3468 10.762 20.0268 10.9635 19.6754 11.0514C19.324 11.1392 18.9571 11.1094 18.621 10.9657C18.2849 10.8219 17.9947 10.5707 17.7871 10.2439C17.5796 9.917 17.464 9.52913 17.455 9.12931V9.096C17.455 8.83046 17.5021 8.56751 17.5936 8.32219C17.6851 8.07686 17.8193 7.85395 17.9884 7.66618C18.1575 7.47841 18.3582 7.32947 18.5791 7.22785C18.8001 7.12623 19.0369 7.07393 19.276 7.07393L19.2295 7.05727Z"/>
+                <path class="fill-black group-hover:fill-[url(#paint1_linear_5_26)] transition-colors"
+                      d="M25.1275 49.8188C35.7775 49.8188 35.104 44.6887 35.104 44.6887V39.392H24.9775V37.7264H39.1825C39.1825 37.7264 46 38.5725 46 26.6417C46 14.7108 39.9805 15.1289 39.9805 15.1289H36.46V20.6537C36.46 20.6537 36.655 27.3379 30.61 27.3379H20.4625C20.4625 27.3379 14.8 27.243 14.8 33.4258V43.6394C14.8 43.6394 13.942 49.8222 25.063 49.8222H25.123L25.1275 49.8188ZM30.7255 46.2427C30.3654 46.2528 30.0108 46.1441 29.7064 45.9304C29.4019 45.7166 29.1614 45.4074 29.0153 45.0419C28.8691 44.6764 28.8238 44.2709 28.8852 43.8768C28.9466 43.4827 29.1118 43.1177 29.36 42.8279C29.6082 42.5381 29.9282 42.3365 30.2796 42.2486C30.631 42.1608 30.9979 42.1906 31.334 42.3343C31.6701 42.4781 31.9603 42.7293 32.1679 43.0561C32.3754 43.383 32.491 43.7709 32.5 44.1707V44.2207C32.5 44.757 32.3081 45.2713 31.9666 45.6505C31.6251 46.0297 31.162 46.2427 30.679 46.2427H30.7255Z"/>
+              <defs>
+                <filter id="filter0_d_5_26" x="-3" y="0" width="56" height="61.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic"  result="shape"/>
+                </filter>
+                <linearGradient id="paint0_linear_5_26" x1="8.15074" y1="8.03316" x2="30.1553" y2="27.8048" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#387EB8"/>
+                  <stop offset="1" stop-color="#366994"/>
+                </linearGradient>
+                <linearGradient id="paint1_linear_5_26" x1="19.9412" y1="22.4169" x2="44.7384" y2="41.9127" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFE052"/>
+                  <stop offset="1" stop-color="#FFC331"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
         </div>
       </div>
     </section>
+    </section>
   
-    <section id="projects" class="mx-auto md:max-h-96 flex overflow-hidden w-full bg-gray-800 shadow-md items-center">
-      <!-- <div class=" p-5 h-auto md:max-h-screen flex items-center h-screen gap-4"><h2 class="text-white text-3xl">Projects</h2></div> -->
+
+  
+    <section id="projects" class="mx-auto md:max-h-96 flex overflow-hidden w-full bg-gray-800 shadow-md items-center justify-center">
       <!-- Generated Projects -->
-      <!-- <div class="projects p-5 text-white flex flex-row items-center justify-center mx-auto gap-4">
-        <section class="content-projects text-white bg-black md:max-w-2xl">
-        </section>``1
-      </div> -->
-      <div class=" p-5 h-auto md:max-h-screen flex items-center h-screen gap-4 flex text-center align-middle justify-center"><h2 class="text-white text-3xl">Coming Soon </h2></div>
+      <div class="projects m-5 text-white flex flex-row items-center justify-center mx-auto gap-4">
+   
+      </div>
     </section>
   
     <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
+    <section id="contact" class="py-16 bg-gray-100  max-md:m-5">
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-bold">Contact Me</h2>
         <form class="mt-8 max-w-lg mx-auto" action="https://formspree.io/f/mrbpdgva"
@@ -145,7 +215,6 @@
           <input  id="name" type="text" placeholder="Your Name"  name="name"class="w-full p-3 mb-4 border rounded-md" required>
           <input  id="email" type="email"  name="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded-md" required>
           <textarea id="message" type="text" placeholder="Your Message" name="message" class="w-full p-6 mb-4 border rounded-md" required></textarea>
-          <!-- <input id="file" type="file" placeholder="file" name="file" class="w-full p-3 mb-4 border rounded-md">form input doesn't work in formspree -->
           <button type="submit" id="submit" class="text-gray-900 hover:text-white border border-gray-800 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-300">Submit</button>
         </form>
       </div>      

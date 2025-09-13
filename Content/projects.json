@@ -1,19 +1,29 @@
-[
-    
-    {
-        "id":"project-1",
-        "name": "Project One",
-        "description": "This is the first project.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "url": "/content/calculator-project/calculator.html",
-        "image": "/assets/images/projects/project-1.jpg"
-    },
-    {
-        "id":"project-2",
-        "name": "Project One",
-        "description": "This is the first project.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "url": "/content/calculator-project/calculator.html",
-        "image": "/assets/images/projects/project-1.jpg"
-    }
-]
+// [
+//   {
+//     "id":"project-1",
+//     "name": "Project One",
+//     "description": "This is the first project.",
+//     "technologies": ["HTML", "CSS", "JavaScript"],
+//     "category": ["html", "css", "js"],
+//     "url": "/content/calculator-project/calculator.html",
+//     "image": "/assets/images/projects/project-1.jpg"
+//   },
+//   {
+//     "id":"project-2",
+//     "name": "Tax Calculator",
+//     "description": "A simple tax calculator application.",
+//     "technologies": ["HTML", "CSS", "JavaScript"],
+//     "category": ["html", "css", "js"],
+//     "url": "/content/calculator-project/calculator.html",
+//     "image": "/assets/images/projects/project-1.jpg"
+//   },
+//   {
+//     "id":"project-3",
+//     "name": "PHP Blog",
+//     "description": "A simple PHP blog.",
+//     "technologies": ["PHP", "MySQL"],
+//     "category": ["php"],
+//     "url": "/content/php-blog/index.html",
+//     "image": "/assets/images/projects/project-2.jpg"
+//   }
+// ]

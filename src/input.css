@@ -25,5 +25,23 @@
     color: rgb(0, 0, 0);
     text-align: center;
   }
+  menu {
+    position: fixed;
+    top: 50vh;
+    left: 50px;
+    transform: translateY(-50%);
+  }
+  @media screen and (max-width: 768px) {
+    menu {
+      position: fixed;
+      transform: translateY(0);
+      top: 0;
+      left: unset;
+      right: 0;
+    }
+  }
 }
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 
