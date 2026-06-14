@@ -2,8 +2,9 @@
   "name": "portfolio-paolo",
   "version": "1.0.0",
   "main": "script.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+ "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/input.css --minify"
   },
   "repository": {
     "type": "git",
